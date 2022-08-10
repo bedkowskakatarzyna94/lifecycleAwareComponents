@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    appCompatVersion = '1.4.0'
+    cardViewVersion = '1.0.0'
+    espressoVersion = '3.4.0'
+    junitVersion = '4.13.2'
+    legacySupportVersion = '1.0.0'
+    lifecycleVersion = '2.4.0'
+    recyclerViewVersion = '1.2.1'
+    roomVersion = '2.4.0'
+    constraintLayoutVersion = '2.1.2'
+    lifecycleExtensionsVersion = '2.2.0'
+    savedStateVersion = '2.4.0'
+}
